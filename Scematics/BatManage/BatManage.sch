@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -319,12 +319,12 @@ $EndComp
 $Comp
 L Regulator_SwitchedCapacitor:LM27761 U?
 U 1 1 5FBBFB85
-P 15850 2500
-F 0 "U?" H 15850 3067 50  0000 C CNN
-F 1 "LM27761" H 15850 2976 50  0000 C CNN
-F 2 "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm" H 16000 2000 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm27761.pdf" H 18350 2100 50  0001 C CNN
-	1    15850 2500
+P 15650 4350
+F 0 "U?" H 15650 4917 50  0000 C CNN
+F 1 "LM27761" H 15650 4826 50  0000 C CNN
+F 2 "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm" H 15800 3850 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm27761.pdf" H 18150 3950 50  0001 C CNN
+	1    15650 4350
 	1    0    0    -1  
 $EndComp
 $Comp

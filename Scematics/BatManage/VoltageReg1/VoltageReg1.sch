@@ -1,0 +1,250 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C1
+U 1 1 6017780C
+P 2500 2500
+F 0 "C1" H 2615 2546 50  0000 L CNN
+F 1 "10uF" H 2615 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2538 2350 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR61E106KA12-01.pdf" H 2500 2500 50  0001 C CNN
+F 4 "C" H 2500 2500 50  0001 C CNN "Spice_Primitive"
+F 5 "10u" H 2500 2500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2500 2500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "GRM31CR61E106KA12L" H 2500 2500 50  0001 C CNN "PN"
+	1    2500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 601794FB
+P 5250 2100
+F 0 "L1" V 5440 2100 50  0000 C CNN
+F 1 "3.3uH" V 5349 2100 50  0000 C CNN
+F 2 "Inductor_SMD:L_Vishay_IHLP-2525" H 5250 2100 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/34177/ihlp-2525ez-01.pdf" H 5250 2100 50  0001 C CNN
+F 4 "IHLP2525EZER3R3M01" V 5250 2100 50  0001 C CNN "PN"
+	1    5250 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 6017A1D3
+P 5650 2250
+F 0 "R1" H 5718 2296 50  0000 L CNN
+F 1 "54.9k" H 5718 2205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5690 2240 50  0001 C CNN
+F 3 "~" H 5650 2250 50  0001 C CNN
+F 4 "CRCW040254K9FKED" H 5650 2250 50  0001 C CNN "PN"
+	1    5650 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 6017AE87
+P 5650 2700
+F 0 "R2" H 5718 2746 50  0000 L CNN
+F 1 "10k" H 5718 2655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5690 2690 50  0001 C CNN
+F 3 "~" H 5650 2700 50  0001 C CNN
+F 4 "CRCW040210K0FKED" H 5650 2700 50  0001 C CNN "PN"
+	1    5650 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 6017C0F7
+P 2950 2500
+F 0 "C2" H 3065 2546 50  0000 L CNN
+F 1 "100nF" H 3065 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2988 2350 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf" H 2950 2500 50  0001 C CNN
+F 4 "GRM155R71C104KA88D" H 2950 2500 50  0001 C CNN "PN"
+	1    2950 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 6017D61A
+P 4700 2500
+F 0 "C3" V 4448 2500 50  0000 C CNN
+F 1 "100nF" V 4539 2500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4738 2350 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1005_Y5V_SMD.pdf" H 4700 2500 50  0001 C CNN
+F 4 "C0603C104Z3VACTU" V 4700 2500 50  0001 C CNN "PN"
+	1    4700 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:VDC V1
+U 1 1 6017F524
+P 1950 2450
+F 0 "V1" H 2080 2541 50  0000 L CNN
+F 1 "14.8V" H 2080 2450 50  0000 L CNN
+F 2 "" H 1950 2450 50  0001 C CNN
+F 3 "~" H 1950 2450 50  0001 C CNN
+F 4 "Y" H 1950 2450 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 1950 2450 50  0001 L CNN "Spice_Primitive"
+F 6 "dc 14.8" H 2080 2359 50  0000 L CNN "Spice_Model"
+	1    1950 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:IDC I1
+U 1 1 601803CE
+P 6700 2450
+F 0 "I1" H 6830 2541 50  0000 L CNN
+F 1 "3" H 6830 2450 50  0000 L CNN
+F 2 "" H 6700 2450 50  0001 C CNN
+F 3 "~" H 6700 2450 50  0001 C CNN
+F 4 "Y" H 6700 2450 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "I" H 6700 2450 50  0001 L CNN "Spice_Primitive"
+F 6 "dc 3" H 6830 2359 50  0000 L CNN "Spice_Model"
+	1    6700 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2250 1950 2050
+Wire Wire Line
+	1950 2050 2500 2050
+Wire Wire Line
+	2500 2050 2500 2350
+Wire Wire Line
+	2500 2650 2500 2900
+Wire Wire Line
+	1950 2900 1950 2650
+Wire Wire Line
+	2950 2050 2950 2350
+Wire Wire Line
+	2950 2650 2950 2900
+Wire Wire Line
+	3350 2050 3350 2400
+Wire Wire Line
+	3350 2400 3450 2400
+Wire Wire Line
+	3450 2600 3350 2600
+Wire Wire Line
+	3350 2600 3350 2400
+Connection ~ 3350 2400
+Wire Wire Line
+	3850 2800 3850 2900
+$Comp
+L Device:C C4
+U 1 1 60187D3C
+P 6150 2450
+F 0 "C4" H 6265 2496 50  0000 L CNN
+F 1 "22uF" H 6265 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6188 2300 50  0001 C CNN
+F 3 "C1608X5R1A226M080AC" H 6150 2450 50  0001 C CNN
+F 4 "C1608X5R1A226M080AC" H 6150 2450 50  0001 C CNN "PN"
+	1    6150 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2100 5650 2100
+Wire Wire Line
+	5650 2400 5650 2500
+Wire Wire Line
+	5650 2850 5650 2900
+Wire Wire Line
+	4250 2600 4400 2600
+Wire Wire Line
+	4400 2600 4400 2700
+Wire Wire Line
+	4400 2700 5500 2700
+Wire Wire Line
+	5500 2700 5500 2500
+Wire Wire Line
+	5500 2500 5650 2500
+Connection ~ 5650 2500
+Wire Wire Line
+	5650 2500 5650 2550
+Wire Wire Line
+	4400 2400 4400 2100
+Wire Wire Line
+	4400 2400 4250 2400
+Wire Wire Line
+	4400 2100 4850 2100
+Wire Wire Line
+	4250 2500 4550 2500
+Wire Wire Line
+	4850 2500 4850 2100
+Connection ~ 4850 2100
+Wire Wire Line
+	4850 2100 5100 2100
+Wire Wire Line
+	5650 2100 6150 2100
+Wire Wire Line
+	6150 2100 6150 2300
+Connection ~ 5650 2100
+Wire Wire Line
+	6150 2600 6150 2900
+Wire Wire Line
+	6150 2900 5650 2900
+Connection ~ 5650 2900
+Wire Wire Line
+	6150 2100 6700 2100
+Wire Wire Line
+	6700 2100 6700 2250
+Connection ~ 6150 2100
+Wire Wire Line
+	6700 2650 6700 2900
+Wire Wire Line
+	6700 2900 6150 2900
+Connection ~ 6150 2900
+Connection ~ 2950 2050
+Connection ~ 2950 2900
+Wire Wire Line
+	2950 2050 3350 2050
+Connection ~ 2500 2050
+Connection ~ 2500 2900
+Wire Wire Line
+	2500 2900 1950 2900
+Wire Wire Line
+	2500 2900 2950 2900
+Wire Wire Line
+	2500 2050 2950 2050
+Text Notes 3000 1800 0    50   ~ 0
+4.5V to 17V, 5A Synchronous Step-Down Voltage Regulator in SOT23
+Wire Notes Line
+	2350 1850 6500 1850
+Wire Notes Line
+	6500 1850 6500 3050
+Wire Notes Line
+	6500 3050 2350 3050
+Wire Notes Line
+	2350 3050 2350 1850
+Connection ~ 3850 2900
+Wire Wire Line
+	2950 2900 3850 2900
+Wire Wire Line
+	5650 2900 3850 2900
+$Comp
+L Regulator_Switching:TPS565208 U1
+U 1 1 60178957
+P 3850 2500
+F 0 "U1" H 3850 2867 50  0000 C CNN
+F 1 "TPS565208" H 3850 2776 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3900 2250 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps565208.pdf" H 3850 2500 50  0001 C CNN
+F 4 "X" H 3850 2500 50  0001 C CNN "Spice_Primitive"
+F 5 "TPS565208_TRANS" H 3850 2500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3850 2500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "slvmc89\\TPS565208_TRANS.LIB" H 3850 2500 50  0001 C CNN "Spice_Lib_File"
+	1    3850 2500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

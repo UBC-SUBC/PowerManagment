@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name voltreg)(type Legacy)(uri ${KIPRJMOD}/2021-02-01_03-02-48.lib)(options "")(descr ""))
+)
