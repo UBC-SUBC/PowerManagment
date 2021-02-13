@@ -89,26 +89,12 @@ F 4 "C0603C104Z3VACTU" V 4700 2500 50  0001 C CNN "PN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Simulation_SPICE:VDC V1
-U 1 1 6017F524
-P 1950 2450
-F 0 "V1" H 2080 2541 50  0000 L CNN
-F 1 "14.8V" H 2080 2450 50  0000 L CNN
-F 2 "" H 1950 2450 50  0001 C CNN
-F 3 "~" H 1950 2450 50  0001 C CNN
-F 4 "Y" H 1950 2450 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "V" H 1950 2450 50  0001 L CNN "Spice_Primitive"
-F 6 "dc 14.8" H 2080 2359 50  0000 L CNN "Spice_Model"
-	1    1950 2450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Simulation_SPICE:IDC I1
 U 1 1 601803CE
 P 6700 2450
 F 0 "I1" H 6830 2541 50  0000 L CNN
 F 1 "3" H 6830 2450 50  0000 L CNN
-F 2 "" H 6700 2450 50  0001 C CNN
+F 2 "Connector_Wire:SolderWire-1sqmm_1x02_P5.4mm_D1.4mm_OD2.7mm" H 6700 2450 50  0001 C CNN
 F 3 "~" H 6700 2450 50  0001 C CNN
 F 4 "Y" H 6700 2450 50  0001 L CNN "Spice_Netlist_Enabled"
 F 5 "I" H 6700 2450 50  0001 L CNN "Spice_Primitive"
@@ -117,15 +103,9 @@ F 6 "dc 3" H 6830 2359 50  0000 L CNN "Spice_Model"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1950 2250 1950 2050
-Wire Wire Line
-	1950 2050 2500 2050
-Wire Wire Line
 	2500 2050 2500 2350
 Wire Wire Line
 	2500 2650 2500 2900
-Wire Wire Line
-	1950 2900 1950 2650
 Wire Wire Line
 	2950 2050 2950 2350
 Wire Wire Line
@@ -136,9 +116,6 @@ Wire Wire Line
 	3350 2400 3450 2400
 Wire Wire Line
 	3450 2600 3350 2600
-Wire Wire Line
-	3350 2600 3350 2400
-Connection ~ 3350 2400
 Wire Wire Line
 	3850 2800 3850 2900
 $Comp
@@ -209,10 +186,6 @@ Connection ~ 2950 2050
 Connection ~ 2950 2900
 Wire Wire Line
 	2950 2050 3350 2050
-Connection ~ 2500 2050
-Connection ~ 2500 2900
-Wire Wire Line
-	2500 2900 1950 2900
 Wire Wire Line
 	2500 2900 2950 2900
 Wire Wire Line
@@ -246,5 +219,40 @@ F 6 "Y" H 3850 2500 50  0001 C CNN "Spice_Netlist_Enabled"
 F 7 "slvmc89\\TPS565208_TRANS.LIB" H 3850 2500 50  0001 C CNN "Spice_Lib_File"
 	1    3850 2500
 	1    0    0    -1  
+$EndComp
+Connection ~ 2500 2900
+Connection ~ 2500 2050
+Wire Wire Line
+	2500 2900 1950 2900
+Wire Wire Line
+	1950 2900 1950 2650
+Wire Wire Line
+	1950 2050 2500 2050
+Wire Wire Line
+	1950 2250 1950 2050
+$Comp
+L Simulation_SPICE:VDC V1
+U 1 1 6017F524
+P 1950 2450
+F 0 "V1" H 2080 2541 50  0000 L CNN
+F 1 "14.8V" H 2080 2450 50  0000 L CNN
+F 2 "Connector_Wire:SolderWire-1sqmm_1x02_P5.4mm_D1.4mm_OD2.7mm" H 1950 2450 50  0001 C CNN
+F 3 "~" H 1950 2450 50  0001 C CNN
+F 4 "Y" H 1950 2450 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 1950 2450 50  0001 L CNN "Spice_Primitive"
+F 6 "dc 14.8" H 2080 2359 50  0000 L CNN "Spice_Model"
+	1    1950 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J1
+U 1 1 601D4E7C
+P 3350 2800
+F 0 "J1" V 3222 2880 50  0000 L CNN
+F 1 "Conn_01x01" V 3313 2880 50  0000 L CNN
+F 2 "Connector_Wire:SolderWire-0.127sqmm_1x01_D0.48mm_OD1mm" H 3350 2800 50  0001 C CNN
+F 3 "~" H 3350 2800 50  0001 C CNN
+	1    3350 2800
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
